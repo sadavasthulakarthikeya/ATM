@@ -1,0 +1,3 @@
+- [x] Update pom.xml to add MySQL connector dependency
+- [x] Update application.properties to configure MySQL database
+- [x] Modify script.js to fetch and display withdrawal history on login in step2

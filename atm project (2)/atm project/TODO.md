@@ -1,0 +1,11 @@
+- [x] Rename Java files to follow PascalCase naming conventions
+- [x] Update package declarations in all Java files to com.example.atm.project
+- [x] Fix imports in AtmController.java to match updated packages
+- [x] Implement missing DTO classes (LoginRequest, AmountRequest, LimitRequest)
+- [x] Implement TransactionRecord entity
+- [x] Implement AtmService class with required methods
+- [x] Implement TransactionRepository interface
+- [ ] Add basic CSS styling to style.css
+- [ ] Implement JavaScript functionality in script.js
+- [x] Update application.properties with database configuration
+- [ ] Test the application for compilation and runtime errors

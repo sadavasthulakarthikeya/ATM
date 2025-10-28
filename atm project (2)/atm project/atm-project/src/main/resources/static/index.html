@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure Bank ATM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="atm">
+    <h1>Secure Bank ATM</h1>
+    <div id="screen">
+      <div id="step1" class="step active">
+        <h2>Login</h2>
+        <input type="text" id="accountNumber" autocomplete="off" placeholder="Enter 16-digit Card Number" maxlength="16" />
+        <input type="password" id="pin" placeholder="Enter PIN" />
+        <button onclick="login()">Login</button>
+        <div id="loginMessage"></div>
+      </div>
+
+      <div id="step2" class="step">
+        <h2>Welcome, <span id="userName">User</span></h2>
+        <p>Balance: $<span id="balance">0.00</span></p>
+        <button onclick="checkBalance()">Check Balance</button>
+        <button onclick="showDeposit()">Deposit</button>
+        <button onclick="showWithdraw()">Withdraw</button>
+        <button onclick="showSetLimit()">Set Daily Limit</button>
+        <button onclick="showTransactions()">Transaction History</button>
+        <button onclick="logout()">Logout</button>
+      </div>
+
+      <div id="step3" class="step">
+        <h2>Deposit</h2>
+        <input type="number" id="depositAmount" placeholder="Enter amount" />
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="backToMenu()">Back</button>
+        <div id="depositMessage"></div>
+      </div>
+
+      <div id="step4" class="step">
+        <h2>Withdraw</h2>
+        <input type="number" id="withdrawAmount" placeholder="Enter amount" />
+        <button onclick="withdraw()">Withdraw</button>
+        <button onclick="backToMenu()">Back</button>
+        <div id="withdrawMessage"></div>
+      </div>
+
+      <div id="step5" class="step">
+        <h2>Set Daily Limit</h2>
+        <input type="number" id="dailyLimit" placeholder="Enter daily limit" />
+        <button onclick="setLimit()">Set Limit</button>
+        <button onclick="backToMenu()">Back</button>
+        <div id="limitMessage"></div>
+      </div>
+
+      <div id="step6" class="step">
+        <h2>Transaction History</h2>
+        <div id="transactions"></div>
+        <button onclick="backToMenu()">Back</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
