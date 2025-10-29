@@ -1,14 +1,14 @@
-Secure Bank ATM Project
-Overview
-This is a Spring Boot-based ATM (Automated Teller Machine) simulation project. It provides a secure banking system with account management, transaction processing, and user authentication. The application uses Spring Data JPA for database interactions, Thymeleaf for web templating, and MySQL for data persistence.
+1.Secure Bank ATM Project
+2.Overview
+3.This is a Spring Boot-based ATM (Automated Teller Machine) simulation project. It provides a secure banking system with account management, transaction processing, and user authentication. The application uses Spring Data JPA for database interactions, Thymeleaf for web templating, and MySQL for data persistence.
 
-Features
-User authentication with PIN verification
-Account balance inquiry
-Cash withdrawal with daily limits
-Transaction history
-Secure data handling with validation
-Sample data loading for testing
+4.Features
+5.User authentication with PIN verification
+6.Account balance inquiry
+7.Cash withdrawal with daily limits
+8.Transaction history
+9.Secure data handling with validation
+10.Sample data loading for testing
 Technologies Used
 Java 17
 Spring Boot 3.5.7
